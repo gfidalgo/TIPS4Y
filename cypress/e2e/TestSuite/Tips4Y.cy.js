@@ -270,8 +270,8 @@ describe('Tips4Y', () => {
     cy.get('#senha').type('setembro.2022').should('have.value', 'setembro.2022');
     cy.get('.btn').click('left');
     cy.get('.alert').should('contain', 'Bem vindo, ');
-
     
+    cy.get('span > a').click('left');
     cy.get(':nth-child(5) > a').click('left');
     cy.get('#email').first().should('be.exist');
   })    
